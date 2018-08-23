@@ -38,7 +38,7 @@ class Graph(object):
         self.count_vertex += 1
         self.vertex_list[name] = Vertex(name)
 
-    def add_edge(self, to_vertex, from_vertex, cost=0):
+    def add_edge(self, from_vertex, to_vertex, cost=0):
         if to_vertex not in self.vertex_list:
             self.add_vertex(to_vertex)
         if from_vertex not in self.vertex_list:
